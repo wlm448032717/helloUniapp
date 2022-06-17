@@ -1,0 +1,105 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "糗事百科",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"bounce":"none",
+					"titleNView":{
+						"buttons":[
+							{
+								"type":"menu"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "动态圈"
+			}
+		},
+		{
+			"path": "pages/paper/paper",
+			"style": {
+				"navigationBarTitleText": "小纸条"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"bounce":"none",
+					// "scrollIndicator":"none",//隐藏滚动条
+					"titleNView":{
+						"buttons":[
+							{
+								"type":"menu"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/paper/detail",
+			"style": {
+				"navigationBarTitleText": "聊天页",
+				"app-plus":{}
+			}
+		}
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#2C405A",
+		"selectedColor":"#53b3e5",
+		"backgroundColor":"#FFFFFF",
+		"borderStyle":"black",
+		"list": [
+			{
+				"pagePath":"pages/home/home",
+				"text":"糗事",
+				"iconPath":"static/assset/home.png",
+				"selectedIconPath":"./static/assset/homea.png"
+			},
+			{
+				"pagePath":"pages/news/news",
+				"text":"动态",
+				"iconPath":"static/assset/news.png",
+				"selectedIconPath":"./static/assset/newsa.png"
+			},
+			{
+				"pagePath":"pages/paper/paper",
+				"text":"小纸条",
+				"iconPath":"static/assset/paper.png",
+				"selectedIconPath":"./static/assset/papera.png"
+			},
+			{
+				"pagePath":"pages/mine/mine",
+				"text":"我的",
+				"iconPath":"./static/assset/mine.png",
+				"selectedIconPath":"./static/assset/minea.png"
+			}
+		]
+	}
+}
